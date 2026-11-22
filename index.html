@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Far.AI</title>
+<meta name="theme-color" content="#4338ca">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Far.AI">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22%3E%3Cdefs%3E%3ClinearGradient id=%22fg%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%234338ca%22/%3E%3Cstop offset=%221%22 stop-color=%22%237c7cf0%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%22512%22 height=%22512%22 rx=%22112%22 fill=%22url(%23fg)%22/%3E%3Cg stroke=%22%23fff%22 stroke-width=%2244%22 stroke-linecap=%22round%22 fill=%22none%22%3E%3Cpath d=%22M156 130V382M156 130H278M156 250H256%22/%3E%3C/g%3E%3Ccircle cx=%22354%22 cy=%22130%22 r=%2226%22 fill=%22%23fff%22/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+:root{--bg:#fff;--side:#f9f9f9;--text:#0d0d0d;--muted:#6b6b6b;--line:#e5e5e5;--hover:#ececec;--bubble:#f0f0f0;--accent:#0d0d0d;--on-accent:#fff;--err:#b3261e;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#212121;--side:#171717;--text:#ececec;--muted:#a0a0a0;--line:#363636;--hover:#2a2a2a;--bubble:#2f2f2f;--accent:#ececec;--on-accent:#171717;--err:#f2b8b5;color-scheme:dark}}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{display:flex;height:100dvh;overflow:hidden;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
+[hidden]{display:none!important}
+#side{width:260px;flex:none;display:flex;flex-direction:column;gap:6px;background:var(--side);padding:calc(10px + env(safe-area-inset-top,0px)) 10px calc(10px + env(safe-area-inset-bottom,0px))}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;letter-spacing:-.02em;padding:6px 10px 10px}.lg{width:28px;height:28px;flex:none}.lg.big{display:block;width:76px;height:76px;margin:0 auto 14px}
+#new{width:100%;text-align:left;padding:9px 10px;border-radius:10px;font-weight:600}
+#new:hover,.item:hover,.item.on,.ghost:hover{background:var(--hover)}
+.lbl{font-size:12px;color:var(--muted);padding:10px 10px 2px}
+#list{flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:2px}
+.item{display:flex;align-items:center;border-radius:10px}
+.t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:9px 10px;text-align:left}
+.x{padding:6px 12px;color:var(--muted)}
+#col{flex:1;min-width:0;display:flex;flex-direction:column}
+header{display:flex;align-items:center;gap:6px;padding:calc(8px + env(safe-area-inset-top,0px)) 12px 8px}
+header .logo{flex:1;padding:0}
+.ghost{font-size:20px;padding:4px 12px;border-radius:10px}
+#chat{flex:1;overflow-y:auto;padding:12px 16px;display:flex;flex-direction:column}
+.wrap{max-width:760px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:20px;flex:1}
+.msg{overflow-wrap:anywhere;white-space:pre-wrap}
+.user{align-self:flex-end;max-width:85%;background:var(--bubble);padding:8px 16px;border-radius:20px}
+.bot.err{color:var(--err)}
+.dots span{display:inline-block;width:7px;height:7px;margin-right:5px;border-radius:50%;background:var(--muted);animation:b 1s infinite}
+.dots span:nth-child(2){animation-delay:.15s}.dots span:nth-child(3){animation-delay:.3s}
+@keyframes b{0%,80%,100%{opacity:.3}40%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.dots span{animation:none}}
+#empty{margin:auto;text-align:center;padding:24px 0;width:100%}
+#empty h1{font-size:32px;font-weight:600;margin:0 0 6px;letter-spacing:-.03em}
+#empty p{color:var(--muted);margin:0 0 18px}
+#setup{display:flex;flex-direction:column;gap:10px;max-width:380px;margin:0 auto;padding:18px;background:var(--side);border:1px solid var(--line);border-radius:20px;text-align:left}
+select{padding:11px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:inherit}
+.primary{padding:12px 18px;border-radius:12px;background:var(--accent);color:var(--on-accent);font-weight:600}
+.primary:disabled{opacity:.5;cursor:not-allowed}
+progress{width:100%;height:8px;accent-color:var(--accent)}
+.small{font-size:13px;color:var(--muted);overflow-wrap:anywhere}
+.small.err{color:var(--err)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip{border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px}
+.chip:hover{background:var(--hover)}
+footer{padding:6px 12px calc(10px + env(safe-area-inset-bottom,0px))}
+.bar{max-width:760px;margin:0 auto;display:flex;gap:8px;align-items:flex-end;background:var(--bubble);border-radius:26px;padding:6px 6px 6px 18px}
+textarea{flex:1;resize:none;max-height:140px;min-height:36px;padding:7px 0;border:0;outline:0;background:none;color:var(--text);font:inherit;line-height:1.5}
+#go{width:36px;height:36px;flex:none;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:18px}
+#go:disabled{opacity:.25;cursor:default}
+#status{max-width:760px;margin:6px auto 0;font-size:12px;color:var(--muted);text-align:center;min-height:16px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#scrim{display:none}
+@media (max-width:800px){
+#side{position:fixed;top:0;bottom:0;left:0;width:290px;z-index:20;transform:translateX(-100%);transition:transform .2s}
+#side.open{transform:none}
+#side.open+#scrim{display:block;position:fixed;inset:0;z-index:15;background:rgba(0,0,0,.4)}
+}
+@media (min-width:801px){header{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="fg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4338ca"/><stop offset="1" stop-color="#7c7cf0"/></linearGradient></defs><symbol id="logo" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="url(#fg)"/><g stroke="#fff" stroke-width="44" stroke-linecap="round" fill="none"><path d="M156 130V382M156 130H278M156 250H256"/></g><circle cx="354" cy="130" r="26" fill="#fff"/></symbol></svg>
+<aside id="side">
+  <div class="logo"><svg class="lg" aria-hidden="true"><use href="#logo"/></svg>Far.AI</div>
+  <button id="new">+ New chat</button>
+  <div class="lbl">Chats</div>
+  <div id="list"></div>
+</aside>
+<div id="scrim"></div>
+<div id="col">
+<header>
+  <button class="ghost" id="menu" aria-label="Chats">☰</button>
+  <div class="logo"><svg class="lg" aria-hidden="true"><use href="#logo"/></svg>Far.AI</div>
+  <button class="ghost" id="new2" aria-label="New chat">✎</button>
+</header>
+<main id="chat"><div class="wrap" id="wrap">
+  <div id="empty">
+    <svg class="lg big" aria-hidden="true"><use href="#logo"/></svg>
+    <h1>Far.AI</h1>
+    <p>A free AI that runs on your own device. No account, no API key.</p>
+    <div id="setup">
+      <select id="model" aria-label="Model"></select>
+      <button class="primary" id="load">Load Far.AI</button>
+      <progress id="bar" max="1" value="0" hidden></progress>
+      <div class="small" id="note">First load downloads the model once, then it’s saved in your browser. Needs a browser with WebGPU.</div>
+    </div>
+    <div class="chips" id="chips" hidden></div>
+  </div>
+</div></main>
+<footer>
+  <div class="bar">
+    <textarea id="in" rows="1" placeholder="Load Far.AI first…"></textarea>
+    <button id="go" disabled aria-label="Send">↑</button>
+  </div>
+  <div id="status"></div>
+</footer>
+</div>
+<script type="module">
+const WEBLLM_URL = "https://cdn.jsdelivr.net/npm/@mlc-ai/web-llm@0.2.79/+esm";
+const SYSTEM = "You are Far.AI, a friendly, curious and helpful AI chat companion. Keep answers clear and reasonably concise, and use plain text.";
+const MODELS = [
+  ["Llama-3.2-1B-Instruct-q4f16_1-MLC", "Fast: Llama 3.2 1B (roughly 1 GB)"],
+  ["Qwen2.5-1.5B-Instruct-q4f16_1-MLC", "Balanced: Qwen 2.5 1.5B (roughly 1.5 GB)"],
+  ["Llama-3.2-3B-Instruct-q4f16_1-MLC", "Smarter: Llama 3.2 3B (roughly 2.3 GB)"]
+];
+const SUGGEST = ["Explain something in simple terms", "Help me write a message", "Give me a fun fact", "Plan my day"];
+const $ = (id) => document.getElementById(id);
+const chat = $("chat"), wrap = $("wrap"), input = $("in"), go = $("go"), emptyEl = $("empty"), side = $("side"), list = $("list");
+const KEY = "farai.chats.v2";
+let engine = null, busy = false, turns = [], chats = [], cur = null;
+try { chats = JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { chats = []; }
+if (!Array.isArray(chats)) chats = [];
+function save() { try { localStorage.setItem(KEY, JSON.stringify(chats.slice(0, 40))); } catch (e) {} }
+
+MODELS.forEach(([id, label]) => {
+  const o = document.createElement("option");
+  o.value = id; o.textContent = label; $("model").appendChild(o);
+});
+SUGGEST.forEach((s) => {
+  const b = document.createElement("button");
+  b.className = "chip"; b.textContent = s;
+  b.onclick = () => send(s);
+  $("chips").appendChild(b);
+});
+
+function toBottom() { chat.scrollTop = chat.scrollHeight; }
+function refresh() {
+  go.disabled = !engine || (!busy && !input.value.trim());
+  go.textContent = busy ? "■" : "↑";
+  go.setAttribute("aria-label", busy ? "Stop" : "Send");
+}
+function addMsg(kind) {
+  emptyEl.remove();
+  const d = document.createElement("div");
+  d.className = "msg " + kind;
+  wrap.appendChild(d); toBottom();
+  return d;
+}
+function note(text, isErr) {
+  $("note").textContent = text;
+  $("note").classList.toggle("err", !!isErr);
+}
+function renderList() {
+  list.innerHTML = "";
+  chats.forEach((c) => {
+    const row = document.createElement("div");
+    row.className = "item" + (c === cur ? " on" : "");
+    const t = document.createElement("button");
+    t.className = "t"; t.textContent = c.title; t.onclick = () => openChat(c);
+    const x = document.createElement("button");
+    x.className = "x"; x.textContent = "×"; x.setAttribute("aria-label", "Delete chat");
+    x.onclick = () => {
+      chats = chats.filter((k) => k !== c); save();
+      if (c === cur) startChat(); else renderList();
+    };
+    row.append(t, x); list.appendChild(row);
+  });
+}
+function openChat(c) {
+  cur = c; turns = c.turns; wrap.innerHTML = "";
+  c.turns.forEach((t) => { addMsg(t.role === "user" ? "user" : "bot").textContent = t.content; });
+  if (!c.turns.length || !engine) wrap.appendChild(emptyEl);
+  side.classList.remove("open"); renderList(); toBottom();
+}
+function startChat() { openChat({ id: Date.now().toString(36), title: "New chat", turns: [] }); }
+
+$("load").onclick = async () => {
+  if (!navigator.gpu) {
+    note("This browser doesn’t support WebGPU. Try recent Chrome or Edge on a computer, or Safari on iOS 26 or newer, and open the page over https.", true);
+    return;
+  }
+  $("load").disabled = true; $("model").disabled = true; $("bar").hidden = false;
+  note("Starting…");
+  try {
+    const webllm = await import(WEBLLM_URL);
+    engine = await webllm.CreateMLCEngine($("model").value, {
+      initProgressCallback: (r) => { $("bar").value = r.progress || 0; note(r.text || "Loading…"); }
+    });
+    $("setup").hidden = true; $("chips").hidden = false;
+    if (turns.length) emptyEl.remove();
+    input.placeholder = "Message Far.AI…"; input.focus();
+    $("status").textContent = "Running on your device. Your chats stay in this browser.";
+  } catch (e) {
+    engine = null;
+    $("load").disabled = false; $("model").disabled = false; $("bar").hidden = true;
+    note("Couldn’t load the model. Check your connection, or try a smaller model. (" + ((e && e.message) || "unknown error") + ")", true);
+  }
+  refresh();
+};
+
+async function send(text) {
+  text = (text || "").trim();
+  if (!text || busy || !engine) return;
+  const c = cur, t = c.turns;
+  if (!chats.includes(c)) chats.unshift(c);
+  if (!t.length) c.title = text.slice(0, 40);
+  t.push({ role: "user", content: text });
+  addMsg("user").textContent = text;
+  const bot = addMsg("bot");
+  bot.innerHTML = '<span class="dots"><span></span><span></span><span></span></span>';
+  input.value = ""; input.style.height = "auto";
+  busy = true; refresh(); renderList();
+  let out = "";
+  try {
+    const stream = await engine.chat.completions.create({
+      messages: [{ role: "system", content: SYSTEM }].concat(t.slice(-11)),
+      stream: true, temperature: 0.7, max_tokens: 1024
+    });
+    for await (const chunk of stream) {
+      out += (chunk.choices[0] && chunk.choices[0].delta && chunk.choices[0].delta.content) || "";
+      if (out) { bot.textContent = out; toBottom(); }
+    }
+  } catch (e) {
+    if (!out) {
+      bot.classList.add("err");
+      bot.textContent = "Something went wrong while replying. Please try again.";
+    }
+  }
+  if (out) t.push({ role: "assistant", content: out });
+  else {
+    t.pop();
+    if (!t.length) chats = chats.filter((k) => k !== c);
+    if (!bot.classList.contains("err")) { bot.classList.add("err"); bot.textContent = "No reply. Please try again."; }
+  }
+  save(); renderList();
+  busy = false; refresh(); input.focus();
+}
+
+go.onclick = () => { if (busy && engine) engine.interruptGenerate(); else send(input.value); };
+input.addEventListener("input", () => {
+  input.style.height = "auto";
+  input.style.height = Math.min(input.scrollHeight, 140) + "px";
+  refresh();
+});
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(input.value); }
+});
+const fresh = () => { if (busy && engine) engine.interruptGenerate(); startChat(); };
+$("new").onclick = fresh; $("new2").onclick = fresh;
+$("menu").onclick = () => side.classList.add("open");
+$("scrim").onclick = () => side.classList.remove("open");
+startChat(); refresh();
+</script>
+</body>
+</html>
